@@ -1,0 +1,104 @@
+{
+  "project": "House Price Prediction",
+  "target": "median_house_value",
+  "best_model": "Gradient Boosting",
+  "numeric_ranges": {
+    "longitude": {
+      "min": -124.35,
+      "max": -114.31,
+      "median": -118.495
+    },
+    "latitude": {
+      "min": 32.54,
+      "max": 41.95,
+      "median": 34.27
+    },
+    "housing_median_age": {
+      "min": 1.0,
+      "max": 52.0,
+      "median": 28.0
+    },
+    "total_rooms": {
+      "min": 2.0,
+      "max": 39320.0,
+      "median": 2111.0
+    },
+    "total_bedrooms": {
+      "min": 2.0,
+      "max": 6445.0,
+      "median": 436.0
+    },
+    "population": {
+      "min": 3.0,
+      "max": 35682.0,
+      "median": 1181.0
+    },
+    "households": {
+      "min": 2.0,
+      "max": 6082.0,
+      "median": 412.0
+    },
+    "median_income": {
+      "min": 0.4999,
+      "max": 15.0001,
+      "median": 3.45
+    }
+  },
+  "categories": {
+    "ocean_proximity": [
+      "<1H OCEAN",
+      "INLAND",
+      "ISLAND",
+      "NEAR BAY",
+      "NEAR OCEAN"
+    ]
+  },
+  "test_metrics": {
+    "model": "Gradient Boosting",
+    "MAE": 29635.398814947705,
+    "RMSE": 43770.831141543604,
+    "R2": 0.8064041193208503
+  },
+  "model_comparison": [
+    {
+      "model": "Linear Regression",
+      "cv_r2_mean": 0.6322933347261741,
+      "cv_r2_std": 0.011276833955237497,
+      "cv_rmse_mean": 59002.31957568399,
+      "MAE": 43364.37812998659,
+      "RMSE": 59638.189889325135,
+      "R2": 0.6406021848940893
+    },
+    {
+      "model": "Random Forest",
+      "cv_r2_mean": 0.785163405974091,
+      "cv_r2_std": 0.011721072106652342,
+      "cv_rmse_mean": 45086.25992514562,
+      "MAE": 30072.427048718753,
+      "RMSE": 45469.88917401779,
+      "R2": 0.7910827420944958
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_r2_mean": 0.805920132208068,
+      "cv_r2_std": 0.008232547227891832,
+      "cv_rmse_mean": 42859.17052454926,
+      "MAE": 29635.398814947705,
+      "RMSE": 43770.831141543604,
+      "R2": 0.8064041193208503
+    }
+  ],
+  "feature_importance": {
+    "latitude": 1.292479611948159,
+    "longitude": 1.263577838431288,
+    "total_rooms": 0.7367692500252544,
+    "median_income": 0.3685387130342167,
+    "total_bedrooms": 0.34843657284671703,
+    "households": 0.26240911831077574,
+    "population": 0.20535216170438328,
+    "ocean_proximity": 0.12769886648790704,
+    "housing_median_age": 0.04227129364232938
+  },
+  "training_rows": 15678,
+  "test_rows": 3920
+}

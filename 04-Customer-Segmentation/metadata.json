@@ -1,0 +1,1429 @@
+{
+  "project": "Customer Segmentation",
+  "algorithm": "K-Means",
+  "n_segments": 6,
+  "features": [
+    "Age",
+    "AnnualIncome",
+    "SpendingScore"
+  ],
+  "silhouette": 0.42742814991580175,
+  "davies_bouldin": 0.8277427938879608,
+  "calinski_harabasz": 135.10221697156996,
+  "stability": {
+    "seed_ari_mean": 0.8725577535854342,
+    "seed_ari_min": 0.6514817938551982,
+    "subsample_ari_mean": 0.9626428362099473,
+    "subsample_ari_min": 0.9042189059716182
+  },
+  "feature_ranges": {
+    "Age": {
+      "min": 18.0,
+      "max": 70.0,
+      "median": 36.0
+    },
+    "AnnualIncome": {
+      "min": 15.0,
+      "max": 137.0,
+      "median": 61.5
+    },
+    "SpendingScore": {
+      "min": 1.0,
+      "max": 99.0,
+      "median": 50.0
+    }
+  },
+  "segment_names": {
+    "0": "Segment 0: High income, Low spending, older",
+    "1": "Segment 1: Low income, Low spending, older",
+    "2": "Segment 2: Low income, High spending, younger",
+    "3": "Segment 3: High income, High spending, younger",
+    "4": "Segment 4: Low income, Low spending, younger",
+    "5": "Segment 5: Low income, Low spending, older"
+  },
+  "segment_levels": {
+    "0": {
+      "income": "High",
+      "spending": "Low",
+      "age": "Older"
+    },
+    "1": {
+      "income": "Low",
+      "spending": "Low",
+      "age": "Older"
+    },
+    "2": {
+      "income": "Low",
+      "spending": "High",
+      "age": "Younger"
+    },
+    "3": {
+      "income": "High",
+      "spending": "High",
+      "age": "Younger"
+    },
+    "4": {
+      "income": "Low",
+      "spending": "Low",
+      "age": "Younger"
+    },
+    "5": {
+      "income": "Low",
+      "spending": "Low",
+      "age": "Older"
+    }
+  },
+  "segment_profiles": [
+    {
+      "segment": 0,
+      "name": "Segment 0: High income, Low spending, older",
+      "Age": 41.9,
+      "AnnualIncome": 88.9,
+      "SpendingScore": 17.0,
+      "customers": 33,
+      "share_percent": 16.5,
+      "female_percent": 42.4
+    },
+    {
+      "segment": 1,
+      "name": "Segment 1: Low income, Low spending, older",
+      "Age": 56.3,
+      "AnnualIncome": 54.3,
+      "SpendingScore": 49.1,
+      "customers": 45,
+      "share_percent": 22.5,
+      "female_percent": 57.8
+    },
+    {
+      "segment": 2,
+      "name": "Segment 2: Low income, High spending, younger",
+      "Age": 25.2,
+      "AnnualIncome": 25.8,
+      "SpendingScore": 76.9,
+      "customers": 24,
+      "share_percent": 12.0,
+      "female_percent": 58.3
+    },
+    {
+      "segment": 3,
+      "name": "Segment 3: High income, High spending, younger",
+      "Age": 32.7,
+      "AnnualIncome": 86.5,
+      "SpendingScore": 82.1,
+      "customers": 39,
+      "share_percent": 19.5,
+      "female_percent": 53.8
+    },
+    {
+      "segment": 4,
+      "name": "Segment 4: Low income, Low spending, younger",
+      "Age": 26.7,
+      "AnnualIncome": 57.6,
+      "SpendingScore": 47.8,
+      "customers": 38,
+      "share_percent": 19.0,
+      "female_percent": 63.2
+    },
+    {
+      "segment": 5,
+      "name": "Segment 5: Low income, Low spending, older",
+      "Age": 45.5,
+      "AnnualIncome": 26.3,
+      "SpendingScore": 19.4,
+      "customers": 21,
+      "share_percent": 10.5,
+      "female_percent": 61.9
+    }
+  ],
+  "k_selection": [
+    {
+      "k": 2,
+      "inertia": 389.3861889564371,
+      "silhouette": 0.33547192894004574,
+      "davies_bouldin": 1.2606822880201844,
+      "calinski_harabasz": 107.09556673899093
+    },
+    {
+      "k": 3,
+      "inertia": 295.2122461555488,
+      "silhouette": 0.357793388710272,
+      "davies_bouldin": 1.050270139649266,
+      "calinski_harabasz": 101.6949470919303
+    },
+    {
+      "k": 4,
+      "inertia": 205.22514747675916,
+      "silhouette": 0.4039582785148566,
+      "davies_bouldin": 0.9307956868103672,
+      "calinski_harabasz": 125.67639662405028
+    },
+    {
+      "k": 5,
+      "inertia": 168.24758017556837,
+      "silhouette": 0.41664341513732767,
+      "davies_bouldin": 0.874551051002418,
+      "calinski_harabasz": 125.10094020060954
+    },
+    {
+      "k": 6,
+      "inertia": 133.86842085478855,
+      "silhouette": 0.4284167762892593,
+      "davies_bouldin": 0.8253539040983219,
+      "calinski_harabasz": 135.10210365783408
+    },
+    {
+      "k": 7,
+      "inertia": 117.01155455889813,
+      "silhouette": 0.417231894954916,
+      "davies_bouldin": 0.7934668170964964,
+      "calinski_harabasz": 132.77430922888286
+    },
+    {
+      "k": 8,
+      "inertia": 103.87329152383714,
+      "silhouette": 0.4082067042807375,
+      "davies_bouldin": 0.8917830367156759,
+      "calinski_harabasz": 131.0062159524198
+    },
+    {
+      "k": 9,
+      "inertia": 93.09289110041726,
+      "silhouette": 0.41769250624076476,
+      "davies_bouldin": 0.819843947636208,
+      "calinski_harabasz": 130.00355969096435
+    },
+    {
+      "k": 10,
+      "inertia": 82.385153645266,
+      "silhouette": 0.40655411010117015,
+      "davies_bouldin": 0.8679043654208403,
+      "calinski_harabasz": 132.63827341036227
+    }
+  ],
+  "algorithm_comparison": [
+    {
+      "algorithm": "K-Means",
+      "silhouette": 0.4284167762892593,
+      "davies_bouldin": 0.8253539040983219,
+      "calinski_harabasz": 135.10210365783408,
+      "smallest_cluster_share": 0.105
+    },
+    {
+      "algorithm": "Agglomerative (Ward)",
+      "silhouette": 0.4201169558789579,
+      "davies_bouldin": 0.8521020845733146,
+      "calinski_harabasz": 127.98645433956887,
+      "smallest_cluster_share": 0.105
+    },
+    {
+      "algorithm": "Gaussian Mixture",
+      "silhouette": 0.3766841078351589,
+      "davies_bouldin": 0.8712865848500657,
+      "calinski_harabasz": 107.59086102117575,
+      "smallest_cluster_share": 0.065
+    }
+  ],
+  "customer_points": [
+    {
+      "Age": 19,
+      "AnnualIncome": 15,
+      "SpendingScore": 39,
+      "segment": 2
+    },
+    {
+      "Age": 21,
+      "AnnualIncome": 15,
+      "SpendingScore": 81,
+      "segment": 2
+    },
+    {
+      "Age": 20,
+      "AnnualIncome": 16,
+      "SpendingScore": 6,
+      "segment": 5
+    },
+    {
+      "Age": 23,
+      "AnnualIncome": 16,
+      "SpendingScore": 77,
+      "segment": 2
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 17,
+      "SpendingScore": 40,
+      "segment": 5
+    },
+    {
+      "Age": 22,
+      "AnnualIncome": 17,
+      "SpendingScore": 76,
+      "segment": 2
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 18,
+      "SpendingScore": 6,
+      "segment": 5
+    },
+    {
+      "Age": 23,
+      "AnnualIncome": 18,
+      "SpendingScore": 94,
+      "segment": 2
+    },
+    {
+      "Age": 64,
+      "AnnualIncome": 19,
+      "SpendingScore": 3,
+      "segment": 5
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 19,
+      "SpendingScore": 72,
+      "segment": 2
+    },
+    {
+      "Age": 67,
+      "AnnualIncome": 19,
+      "SpendingScore": 14,
+      "segment": 5
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 19,
+      "SpendingScore": 99,
+      "segment": 2
+    },
+    {
+      "Age": 58,
+      "AnnualIncome": 20,
+      "SpendingScore": 15,
+      "segment": 5
+    },
+    {
+      "Age": 24,
+      "AnnualIncome": 20,
+      "SpendingScore": 77,
+      "segment": 2
+    },
+    {
+      "Age": 37,
+      "AnnualIncome": 20,
+      "SpendingScore": 13,
+      "segment": 5
+    },
+    {
+      "Age": 22,
+      "AnnualIncome": 20,
+      "SpendingScore": 79,
+      "segment": 2
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 21,
+      "SpendingScore": 35,
+      "segment": 5
+    },
+    {
+      "Age": 20,
+      "AnnualIncome": 21,
+      "SpendingScore": 66,
+      "segment": 2
+    },
+    {
+      "Age": 52,
+      "AnnualIncome": 23,
+      "SpendingScore": 29,
+      "segment": 5
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 23,
+      "SpendingScore": 98,
+      "segment": 2
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 24,
+      "SpendingScore": 35,
+      "segment": 5
+    },
+    {
+      "Age": 25,
+      "AnnualIncome": 24,
+      "SpendingScore": 73,
+      "segment": 2
+    },
+    {
+      "Age": 46,
+      "AnnualIncome": 25,
+      "SpendingScore": 5,
+      "segment": 5
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 25,
+      "SpendingScore": 73,
+      "segment": 2
+    },
+    {
+      "Age": 54,
+      "AnnualIncome": 28,
+      "SpendingScore": 14,
+      "segment": 5
+    },
+    {
+      "Age": 29,
+      "AnnualIncome": 28,
+      "SpendingScore": 82,
+      "segment": 2
+    },
+    {
+      "Age": 45,
+      "AnnualIncome": 28,
+      "SpendingScore": 32,
+      "segment": 5
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 28,
+      "SpendingScore": 61,
+      "segment": 2
+    },
+    {
+      "Age": 40,
+      "AnnualIncome": 29,
+      "SpendingScore": 31,
+      "segment": 5
+    },
+    {
+      "Age": 23,
+      "AnnualIncome": 29,
+      "SpendingScore": 87,
+      "segment": 2
+    },
+    {
+      "Age": 60,
+      "AnnualIncome": 30,
+      "SpendingScore": 4,
+      "segment": 5
+    },
+    {
+      "Age": 21,
+      "AnnualIncome": 30,
+      "SpendingScore": 73,
+      "segment": 2
+    },
+    {
+      "Age": 53,
+      "AnnualIncome": 33,
+      "SpendingScore": 4,
+      "segment": 5
+    },
+    {
+      "Age": 18,
+      "AnnualIncome": 33,
+      "SpendingScore": 92,
+      "segment": 2
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 33,
+      "SpendingScore": 14,
+      "segment": 5
+    },
+    {
+      "Age": 21,
+      "AnnualIncome": 33,
+      "SpendingScore": 81,
+      "segment": 2
+    },
+    {
+      "Age": 42,
+      "AnnualIncome": 34,
+      "SpendingScore": 17,
+      "segment": 5
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 34,
+      "SpendingScore": 73,
+      "segment": 2
+    },
+    {
+      "Age": 36,
+      "AnnualIncome": 37,
+      "SpendingScore": 26,
+      "segment": 5
+    },
+    {
+      "Age": 20,
+      "AnnualIncome": 37,
+      "SpendingScore": 75,
+      "segment": 2
+    },
+    {
+      "Age": 65,
+      "AnnualIncome": 38,
+      "SpendingScore": 35,
+      "segment": 1
+    },
+    {
+      "Age": 24,
+      "AnnualIncome": 38,
+      "SpendingScore": 92,
+      "segment": 2
+    },
+    {
+      "Age": 48,
+      "AnnualIncome": 39,
+      "SpendingScore": 36,
+      "segment": 5
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 39,
+      "SpendingScore": 61,
+      "segment": 2
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 39,
+      "SpendingScore": 28,
+      "segment": 5
+    },
+    {
+      "Age": 24,
+      "AnnualIncome": 39,
+      "SpendingScore": 65,
+      "segment": 2
+    },
+    {
+      "Age": 50,
+      "AnnualIncome": 40,
+      "SpendingScore": 55,
+      "segment": 1
+    },
+    {
+      "Age": 27,
+      "AnnualIncome": 40,
+      "SpendingScore": 47,
+      "segment": 4
+    },
+    {
+      "Age": 29,
+      "AnnualIncome": 40,
+      "SpendingScore": 42,
+      "segment": 4
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 40,
+      "SpendingScore": 42,
+      "segment": 4
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 42,
+      "SpendingScore": 52,
+      "segment": 1
+    },
+    {
+      "Age": 33,
+      "AnnualIncome": 42,
+      "SpendingScore": 60,
+      "segment": 4
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 43,
+      "SpendingScore": 54,
+      "segment": 4
+    },
+    {
+      "Age": 59,
+      "AnnualIncome": 43,
+      "SpendingScore": 60,
+      "segment": 1
+    },
+    {
+      "Age": 50,
+      "AnnualIncome": 43,
+      "SpendingScore": 45,
+      "segment": 1
+    },
+    {
+      "Age": 47,
+      "AnnualIncome": 43,
+      "SpendingScore": 41,
+      "segment": 1
+    },
+    {
+      "Age": 51,
+      "AnnualIncome": 44,
+      "SpendingScore": 50,
+      "segment": 1
+    },
+    {
+      "Age": 69,
+      "AnnualIncome": 44,
+      "SpendingScore": 46,
+      "segment": 1
+    },
+    {
+      "Age": 27,
+      "AnnualIncome": 46,
+      "SpendingScore": 51,
+      "segment": 4
+    },
+    {
+      "Age": 53,
+      "AnnualIncome": 46,
+      "SpendingScore": 46,
+      "segment": 1
+    },
+    {
+      "Age": 70,
+      "AnnualIncome": 46,
+      "SpendingScore": 56,
+      "segment": 1
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 46,
+      "SpendingScore": 55,
+      "segment": 4
+    },
+    {
+      "Age": 67,
+      "AnnualIncome": 47,
+      "SpendingScore": 52,
+      "segment": 1
+    },
+    {
+      "Age": 54,
+      "AnnualIncome": 47,
+      "SpendingScore": 59,
+      "segment": 1
+    },
+    {
+      "Age": 63,
+      "AnnualIncome": 48,
+      "SpendingScore": 51,
+      "segment": 1
+    },
+    {
+      "Age": 18,
+      "AnnualIncome": 48,
+      "SpendingScore": 59,
+      "segment": 4
+    },
+    {
+      "Age": 43,
+      "AnnualIncome": 48,
+      "SpendingScore": 50,
+      "segment": 1
+    },
+    {
+      "Age": 68,
+      "AnnualIncome": 48,
+      "SpendingScore": 48,
+      "segment": 1
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 48,
+      "SpendingScore": 59,
+      "segment": 4
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 48,
+      "SpendingScore": 47,
+      "segment": 4
+    },
+    {
+      "Age": 70,
+      "AnnualIncome": 49,
+      "SpendingScore": 55,
+      "segment": 1
+    },
+    {
+      "Age": 47,
+      "AnnualIncome": 49,
+      "SpendingScore": 42,
+      "segment": 1
+    },
+    {
+      "Age": 60,
+      "AnnualIncome": 50,
+      "SpendingScore": 49,
+      "segment": 1
+    },
+    {
+      "Age": 60,
+      "AnnualIncome": 50,
+      "SpendingScore": 56,
+      "segment": 1
+    },
+    {
+      "Age": 59,
+      "AnnualIncome": 54,
+      "SpendingScore": 47,
+      "segment": 1
+    },
+    {
+      "Age": 26,
+      "AnnualIncome": 54,
+      "SpendingScore": 54,
+      "segment": 4
+    },
+    {
+      "Age": 45,
+      "AnnualIncome": 54,
+      "SpendingScore": 53,
+      "segment": 1
+    },
+    {
+      "Age": 40,
+      "AnnualIncome": 54,
+      "SpendingScore": 48,
+      "segment": 4
+    },
+    {
+      "Age": 23,
+      "AnnualIncome": 54,
+      "SpendingScore": 52,
+      "segment": 4
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 54,
+      "SpendingScore": 42,
+      "segment": 1
+    },
+    {
+      "Age": 57,
+      "AnnualIncome": 54,
+      "SpendingScore": 51,
+      "segment": 1
+    },
+    {
+      "Age": 38,
+      "AnnualIncome": 54,
+      "SpendingScore": 55,
+      "segment": 4
+    },
+    {
+      "Age": 67,
+      "AnnualIncome": 54,
+      "SpendingScore": 41,
+      "segment": 1
+    },
+    {
+      "Age": 46,
+      "AnnualIncome": 54,
+      "SpendingScore": 44,
+      "segment": 1
+    },
+    {
+      "Age": 21,
+      "AnnualIncome": 54,
+      "SpendingScore": 57,
+      "segment": 4
+    },
+    {
+      "Age": 48,
+      "AnnualIncome": 54,
+      "SpendingScore": 46,
+      "segment": 1
+    },
+    {
+      "Age": 55,
+      "AnnualIncome": 57,
+      "SpendingScore": 58,
+      "segment": 1
+    },
+    {
+      "Age": 22,
+      "AnnualIncome": 57,
+      "SpendingScore": 55,
+      "segment": 4
+    },
+    {
+      "Age": 34,
+      "AnnualIncome": 58,
+      "SpendingScore": 60,
+      "segment": 4
+    },
+    {
+      "Age": 50,
+      "AnnualIncome": 58,
+      "SpendingScore": 46,
+      "segment": 1
+    },
+    {
+      "Age": 68,
+      "AnnualIncome": 59,
+      "SpendingScore": 55,
+      "segment": 1
+    },
+    {
+      "Age": 18,
+      "AnnualIncome": 59,
+      "SpendingScore": 41,
+      "segment": 4
+    },
+    {
+      "Age": 48,
+      "AnnualIncome": 60,
+      "SpendingScore": 49,
+      "segment": 1
+    },
+    {
+      "Age": 40,
+      "AnnualIncome": 60,
+      "SpendingScore": 40,
+      "segment": 4
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 60,
+      "SpendingScore": 42,
+      "segment": 4
+    },
+    {
+      "Age": 24,
+      "AnnualIncome": 60,
+      "SpendingScore": 52,
+      "segment": 4
+    },
+    {
+      "Age": 47,
+      "AnnualIncome": 60,
+      "SpendingScore": 47,
+      "segment": 1
+    },
+    {
+      "Age": 27,
+      "AnnualIncome": 60,
+      "SpendingScore": 50,
+      "segment": 4
+    },
+    {
+      "Age": 48,
+      "AnnualIncome": 61,
+      "SpendingScore": 42,
+      "segment": 1
+    },
+    {
+      "Age": 20,
+      "AnnualIncome": 61,
+      "SpendingScore": 49,
+      "segment": 4
+    },
+    {
+      "Age": 23,
+      "AnnualIncome": 62,
+      "SpendingScore": 41,
+      "segment": 4
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 62,
+      "SpendingScore": 48,
+      "segment": 1
+    },
+    {
+      "Age": 67,
+      "AnnualIncome": 62,
+      "SpendingScore": 59,
+      "segment": 1
+    },
+    {
+      "Age": 26,
+      "AnnualIncome": 62,
+      "SpendingScore": 55,
+      "segment": 4
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 62,
+      "SpendingScore": 56,
+      "segment": 1
+    },
+    {
+      "Age": 21,
+      "AnnualIncome": 62,
+      "SpendingScore": 42,
+      "segment": 4
+    },
+    {
+      "Age": 66,
+      "AnnualIncome": 63,
+      "SpendingScore": 50,
+      "segment": 1
+    },
+    {
+      "Age": 54,
+      "AnnualIncome": 63,
+      "SpendingScore": 46,
+      "segment": 1
+    },
+    {
+      "Age": 68,
+      "AnnualIncome": 63,
+      "SpendingScore": 43,
+      "segment": 1
+    },
+    {
+      "Age": 66,
+      "AnnualIncome": 63,
+      "SpendingScore": 48,
+      "segment": 1
+    },
+    {
+      "Age": 65,
+      "AnnualIncome": 63,
+      "SpendingScore": 52,
+      "segment": 1
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 63,
+      "SpendingScore": 54,
+      "segment": 4
+    },
+    {
+      "Age": 38,
+      "AnnualIncome": 64,
+      "SpendingScore": 42,
+      "segment": 4
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 64,
+      "SpendingScore": 46,
+      "segment": 4
+    },
+    {
+      "Age": 18,
+      "AnnualIncome": 65,
+      "SpendingScore": 48,
+      "segment": 4
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 65,
+      "SpendingScore": 50,
+      "segment": 4
+    },
+    {
+      "Age": 63,
+      "AnnualIncome": 65,
+      "SpendingScore": 43,
+      "segment": 1
+    },
+    {
+      "Age": 49,
+      "AnnualIncome": 65,
+      "SpendingScore": 59,
+      "segment": 1
+    },
+    {
+      "Age": 51,
+      "AnnualIncome": 67,
+      "SpendingScore": 43,
+      "segment": 1
+    },
+    {
+      "Age": 50,
+      "AnnualIncome": 67,
+      "SpendingScore": 57,
+      "segment": 1
+    },
+    {
+      "Age": 27,
+      "AnnualIncome": 67,
+      "SpendingScore": 56,
+      "segment": 4
+    },
+    {
+      "Age": 38,
+      "AnnualIncome": 67,
+      "SpendingScore": 40,
+      "segment": 4
+    },
+    {
+      "Age": 40,
+      "AnnualIncome": 69,
+      "SpendingScore": 58,
+      "segment": 4
+    },
+    {
+      "Age": 39,
+      "AnnualIncome": 69,
+      "SpendingScore": 91,
+      "segment": 3
+    },
+    {
+      "Age": 23,
+      "AnnualIncome": 70,
+      "SpendingScore": 29,
+      "segment": 4
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 70,
+      "SpendingScore": 77,
+      "segment": 3
+    },
+    {
+      "Age": 43,
+      "AnnualIncome": 71,
+      "SpendingScore": 35,
+      "segment": 0
+    },
+    {
+      "Age": 40,
+      "AnnualIncome": 71,
+      "SpendingScore": 95,
+      "segment": 3
+    },
+    {
+      "Age": 59,
+      "AnnualIncome": 71,
+      "SpendingScore": 11,
+      "segment": 0
+    },
+    {
+      "Age": 38,
+      "AnnualIncome": 71,
+      "SpendingScore": 75,
+      "segment": 3
+    },
+    {
+      "Age": 47,
+      "AnnualIncome": 71,
+      "SpendingScore": 9,
+      "segment": 0
+    },
+    {
+      "Age": 39,
+      "AnnualIncome": 71,
+      "SpendingScore": 75,
+      "segment": 3
+    },
+    {
+      "Age": 25,
+      "AnnualIncome": 72,
+      "SpendingScore": 34,
+      "segment": 4
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 72,
+      "SpendingScore": 71,
+      "segment": 3
+    },
+    {
+      "Age": 20,
+      "AnnualIncome": 73,
+      "SpendingScore": 5,
+      "segment": 0
+    },
+    {
+      "Age": 29,
+      "AnnualIncome": 73,
+      "SpendingScore": 88,
+      "segment": 3
+    },
+    {
+      "Age": 44,
+      "AnnualIncome": 73,
+      "SpendingScore": 7,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 73,
+      "SpendingScore": 73,
+      "segment": 3
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 74,
+      "SpendingScore": 10,
+      "segment": 4
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 74,
+      "SpendingScore": 72,
+      "segment": 3
+    },
+    {
+      "Age": 57,
+      "AnnualIncome": 75,
+      "SpendingScore": 5,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 75,
+      "SpendingScore": 93,
+      "segment": 3
+    },
+    {
+      "Age": 28,
+      "AnnualIncome": 76,
+      "SpendingScore": 40,
+      "segment": 4
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 76,
+      "SpendingScore": 87,
+      "segment": 3
+    },
+    {
+      "Age": 25,
+      "AnnualIncome": 77,
+      "SpendingScore": 12,
+      "segment": 0
+    },
+    {
+      "Age": 28,
+      "AnnualIncome": 77,
+      "SpendingScore": 97,
+      "segment": 3
+    },
+    {
+      "Age": 48,
+      "AnnualIncome": 77,
+      "SpendingScore": 36,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 77,
+      "SpendingScore": 74,
+      "segment": 3
+    },
+    {
+      "Age": 34,
+      "AnnualIncome": 78,
+      "SpendingScore": 22,
+      "segment": 0
+    },
+    {
+      "Age": 34,
+      "AnnualIncome": 78,
+      "SpendingScore": 90,
+      "segment": 3
+    },
+    {
+      "Age": 43,
+      "AnnualIncome": 78,
+      "SpendingScore": 17,
+      "segment": 0
+    },
+    {
+      "Age": 39,
+      "AnnualIncome": 78,
+      "SpendingScore": 88,
+      "segment": 3
+    },
+    {
+      "Age": 44,
+      "AnnualIncome": 78,
+      "SpendingScore": 20,
+      "segment": 0
+    },
+    {
+      "Age": 38,
+      "AnnualIncome": 78,
+      "SpendingScore": 76,
+      "segment": 3
+    },
+    {
+      "Age": 47,
+      "AnnualIncome": 78,
+      "SpendingScore": 16,
+      "segment": 0
+    },
+    {
+      "Age": 27,
+      "AnnualIncome": 78,
+      "SpendingScore": 89,
+      "segment": 3
+    },
+    {
+      "Age": 37,
+      "AnnualIncome": 78,
+      "SpendingScore": 1,
+      "segment": 0
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 78,
+      "SpendingScore": 78,
+      "segment": 3
+    },
+    {
+      "Age": 34,
+      "AnnualIncome": 78,
+      "SpendingScore": 1,
+      "segment": 0
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 78,
+      "SpendingScore": 73,
+      "segment": 3
+    },
+    {
+      "Age": 56,
+      "AnnualIncome": 79,
+      "SpendingScore": 35,
+      "segment": 1
+    },
+    {
+      "Age": 29,
+      "AnnualIncome": 79,
+      "SpendingScore": 83,
+      "segment": 3
+    },
+    {
+      "Age": 19,
+      "AnnualIncome": 81,
+      "SpendingScore": 5,
+      "segment": 0
+    },
+    {
+      "Age": 31,
+      "AnnualIncome": 81,
+      "SpendingScore": 93,
+      "segment": 3
+    },
+    {
+      "Age": 50,
+      "AnnualIncome": 85,
+      "SpendingScore": 26,
+      "segment": 0
+    },
+    {
+      "Age": 36,
+      "AnnualIncome": 85,
+      "SpendingScore": 75,
+      "segment": 3
+    },
+    {
+      "Age": 42,
+      "AnnualIncome": 86,
+      "SpendingScore": 20,
+      "segment": 0
+    },
+    {
+      "Age": 33,
+      "AnnualIncome": 86,
+      "SpendingScore": 95,
+      "segment": 3
+    },
+    {
+      "Age": 36,
+      "AnnualIncome": 87,
+      "SpendingScore": 27,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 87,
+      "SpendingScore": 63,
+      "segment": 3
+    },
+    {
+      "Age": 40,
+      "AnnualIncome": 87,
+      "SpendingScore": 13,
+      "segment": 0
+    },
+    {
+      "Age": 28,
+      "AnnualIncome": 87,
+      "SpendingScore": 75,
+      "segment": 3
+    },
+    {
+      "Age": 36,
+      "AnnualIncome": 87,
+      "SpendingScore": 10,
+      "segment": 0
+    },
+    {
+      "Age": 36,
+      "AnnualIncome": 87,
+      "SpendingScore": 92,
+      "segment": 3
+    },
+    {
+      "Age": 52,
+      "AnnualIncome": 88,
+      "SpendingScore": 13,
+      "segment": 0
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 88,
+      "SpendingScore": 86,
+      "segment": 3
+    },
+    {
+      "Age": 58,
+      "AnnualIncome": 88,
+      "SpendingScore": 15,
+      "segment": 0
+    },
+    {
+      "Age": 27,
+      "AnnualIncome": 88,
+      "SpendingScore": 69,
+      "segment": 3
+    },
+    {
+      "Age": 59,
+      "AnnualIncome": 93,
+      "SpendingScore": 14,
+      "segment": 0
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 93,
+      "SpendingScore": 90,
+      "segment": 3
+    },
+    {
+      "Age": 37,
+      "AnnualIncome": 97,
+      "SpendingScore": 32,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 97,
+      "SpendingScore": 86,
+      "segment": 3
+    },
+    {
+      "Age": 46,
+      "AnnualIncome": 98,
+      "SpendingScore": 15,
+      "segment": 0
+    },
+    {
+      "Age": 29,
+      "AnnualIncome": 98,
+      "SpendingScore": 88,
+      "segment": 3
+    },
+    {
+      "Age": 41,
+      "AnnualIncome": 99,
+      "SpendingScore": 39,
+      "segment": 0
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 99,
+      "SpendingScore": 97,
+      "segment": 3
+    },
+    {
+      "Age": 54,
+      "AnnualIncome": 101,
+      "SpendingScore": 24,
+      "segment": 0
+    },
+    {
+      "Age": 28,
+      "AnnualIncome": 101,
+      "SpendingScore": 68,
+      "segment": 3
+    },
+    {
+      "Age": 41,
+      "AnnualIncome": 103,
+      "SpendingScore": 17,
+      "segment": 0
+    },
+    {
+      "Age": 36,
+      "AnnualIncome": 103,
+      "SpendingScore": 85,
+      "segment": 3
+    },
+    {
+      "Age": 34,
+      "AnnualIncome": 103,
+      "SpendingScore": 23,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 103,
+      "SpendingScore": 69,
+      "segment": 3
+    },
+    {
+      "Age": 33,
+      "AnnualIncome": 113,
+      "SpendingScore": 8,
+      "segment": 0
+    },
+    {
+      "Age": 38,
+      "AnnualIncome": 113,
+      "SpendingScore": 91,
+      "segment": 3
+    },
+    {
+      "Age": 47,
+      "AnnualIncome": 120,
+      "SpendingScore": 16,
+      "segment": 0
+    },
+    {
+      "Age": 35,
+      "AnnualIncome": 120,
+      "SpendingScore": 79,
+      "segment": 3
+    },
+    {
+      "Age": 45,
+      "AnnualIncome": 126,
+      "SpendingScore": 28,
+      "segment": 0
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 126,
+      "SpendingScore": 74,
+      "segment": 3
+    },
+    {
+      "Age": 32,
+      "AnnualIncome": 137,
+      "SpendingScore": 18,
+      "segment": 0
+    },
+    {
+      "Age": 30,
+      "AnnualIncome": 137,
+      "SpendingScore": 83,
+      "segment": 3
+    }
+  ],
+  "training_rows": 200
+}
