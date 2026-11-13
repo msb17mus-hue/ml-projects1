@@ -103,7 +103,4 @@ Different evaluation metrics are used depending on the project:
 - Saved trained models.
 - Interactive Streamlit applications.
 
-## Author
-
-Machine Learning Portfolio
 
